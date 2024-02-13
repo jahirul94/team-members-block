@@ -1,5 +1,7 @@
 import { registerBlockType, createBlock } from '@wordpress/blocks';
 import './team-member';
+import './format-types/highlight';
+import './filters'
 import './style.scss';
 import Edit from './edit';
 import save from './save';

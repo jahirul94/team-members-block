@@ -16,6 +16,9 @@
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css",
 	"viewScript": "file:./view.js",
+	"providesContext" : {
+          "blocks-course/team-members-columns" : "columns"
+	},
 	"attributes": {
 		"columns": {
 			"type": "number",

@@ -25,7 +25,10 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
+include_once('php/patterns.php');
+// include_once('php/filters.php');
 function blocks_course_team_members_block_init() {
 	register_block_type( __DIR__ . '/build' );
 }
 add_action( 'init', 'blocks_course_team_members_block_init' );
+

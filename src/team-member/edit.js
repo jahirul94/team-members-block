@@ -44,8 +44,10 @@ function Edit( {
 	attributes,
 	setAttributes,
 	noticeOperations,
+	context,
 	noticeUI,
 	isSelected,
+
 } ) {
 	const { name, bio, url, alt, id, socialLinks } = attributes;
 	const sensors = useSensors(
@@ -275,6 +277,7 @@ function Edit( {
 					value={ name }
 					allowedFormats={ [] }
 				/>
+				{/* {context['blocks-course/team-members-columns']} */}
 				<RichText
 					placeholder={ __( 'Member Bio', 'team-members' ) }
 					tagName="p"
